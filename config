@@ -1,0 +1,12 @@
+{% case site.analytics.provider %}
+{% when "gauges" %}
+  {% include gauges-analytics.html %}
+{% when "google" %}
+  {% include google-analytics.html %}
+{% when "getclicky" %}
+  {% include getclicky-analytics.html %}
+{% when "mixpanel" %}
+  {% include mixpanel-analytics.html %}
+{% when "piwik" %}
+  {% include piwik-analytics.html %}
+{% endcase %}
